@@ -1,16 +1,14 @@
 import type { NextPage } from 'next'
 import dynamic from 'next/dynamic'
-import Head from 'next/head'
-import Image from 'next/image'
 
-const FullMap = dynamic(() => import('../src/components/map/FullMap'), { ssr: false })
+const BoutiquesLocationPage = dynamic(() => import('./boutiquesLocationPage'), { ssr: false })
 
 const Home: NextPage = () => {
   return (
     <div>
       <main>
         <div>
-          <FullMap />
+          <BoutiquesLocationPage />
         </div>
       </main>
     </div>
