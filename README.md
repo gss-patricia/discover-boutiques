@@ -23,7 +23,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 **Additional Notes**
 - I´ve created dependency Inversion using React Context, if in the future we want to replace the axios for another http client we can do the replacement easily.
-- Apparently the Boutiques API is returning the incorrect distance, so I used an algorithm to calculate the closest distance and order them.
+- Apparently the Boutiques API is returning the incorrect distance from me, so I used an algorithm to calculate the closest distance and order them.
 
 Other Commands:
 ```
