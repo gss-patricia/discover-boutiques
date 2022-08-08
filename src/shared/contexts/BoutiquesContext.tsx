@@ -36,7 +36,8 @@ export const BoutiquesProvider = ({ children }: BoutiquesProviderProps) => {
 
         setBoutiques(boutiques)
       } catch (error) {
-          const message = error?.response?.data?.message || 'getBotiques:: Something went wrong'
+          const message =  'getBotiques:: Something went wrong'
+          console.log(error)
           setError(message)
       }
     },
@@ -60,6 +61,7 @@ export const BoutiquesProvider = ({ children }: BoutiquesProviderProps) => {
       value={{
         userLocation: location,
         boutiques,
+        error
       }}
     >
       {children}

@@ -61,8 +61,8 @@ const handler = async (
 
     return response.status(200).json({ boutiques: closestBoutiques })
   } catch (error) {
-      const message = error?.response?.data?.message || 'boutiquesApi:: Unable to find the boutiques'
-
+      const message = 'Unable to find the boutiques'
+      console.log(error)
     return response.status(500).json({ message })
   }
 }

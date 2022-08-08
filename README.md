@@ -45,6 +45,7 @@ yarn test: runs all tests.
 - Add configuration files to dev and production env
 - Create a more agnostic map component to use with other use cases, perhaps use controller approach and view pattern
 - Add loading on the page
+- Improve error handling
 - Create Storybook
 - Add husky for pre-commit hooks
 - Create unit tests and integration tests
