@@ -1,10 +1,11 @@
 
 ## Getting Started
 
-Running the project
+**Running the project**
+
+*Tested with Node >=14.19.3 <16.3.1
 
 ```bash
-Tested with Node >=14.19.3 <16.3.1
 git clone https://github.com/gss-patricia/discover-boutiques.git
 
 cd discover-boutiques/
