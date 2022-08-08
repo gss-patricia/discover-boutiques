@@ -43,7 +43,7 @@ yarn test: runs all tests.
 ## Improvements for the future
 - Add env configuration files
 - Add configuration files to dev and production env
-- Create a more agnostic map component to be used with other use cases
+- Create a more agnostic map component to use with other use cases, perhaps use controller approach and view pattern
 - Add loading on the page
 - Create Storybook
 - Add husky for pre-commit hooks
