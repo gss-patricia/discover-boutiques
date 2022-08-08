@@ -5,10 +5,11 @@ import { Boutique } from '../../shared/types'
 
 import { targetIcon, visitorIcon } from "./constants";
 import { MapWrapper } from './styles' 
+import { LatLng } from "leaflet";
 
 const FullMap = ({userLocation, boutiques}: any) => {
   const LocationMarker = () => {
-    const [position, setPosition] = useState(null);
+    const [position, setPosition] = useState<LatLng | null>(null);
 
     const map = useMap();
 
