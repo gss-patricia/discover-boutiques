@@ -7,7 +7,12 @@ import { targetIcon, visitorIcon } from "./constants";
 import { MapWrapper } from './styles' 
 import { LatLng } from "leaflet";
 
-const FullMap = ({userLocation, boutiques}: any) => {
+type FullMapProps = {
+  userLocation: GeolocationCoordinates,
+  boutiques: Boutique[]
+};
+
+const FullMap = ({userLocation, boutiques}: FullMapProps) => {
   const LocationMarker = () => {
     const [position, setPosition] = useState<LatLng | null>(null);
 
