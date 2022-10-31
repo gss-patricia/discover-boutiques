@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, ReactNode } from "react";
 import { MapContainer, TileLayer, Marker, Popup, useMap } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import { Boutique } from '../../shared/types'
@@ -12,7 +12,7 @@ type FullMapProps = {
   boutiques: Boutique[]
 };
 
-const FullMap = ({userLocation, boutiques}: FullMapProps) => {
+const FullMap = ({userLocation, boutiques}: FullMapProps): ReactNode => {
   const LocationMarker = () => {
     const [position, setPosition] = useState<LatLng | null>(null);
 
